@@ -61,6 +61,8 @@ codex exec resume THREAD_ID "Your follow-up instruction"
 
 If Codex cannot launch, first check the selected executable with `codex --version` and repair its installation or set `CODEX_BIN`. Changing the workflow cannot repair a missing executable or authentication failure.
 
+If Codex rejects an inherited model, update your Codex configuration or pass `--model` with a model available to your account. Autopilot preserves your choice and reports the provider error; it does not silently substitute a different model.
+
 From a source checkout, use `npm ci`, `npm run verify`, and `npm run build`. Source-only equivalents are `npm run autopilot -- "Your task"` and `npm run viewer`. The distributed package runs precompiled JavaScript and requires neither TypeScript nor development dependencies.
 
 Completion is a model judgment. Inspect the reported checks and actual changes before treating the outcome as verified. The runner enforces graph, process, and status contracts; it cannot establish arbitrary task correctness itself.

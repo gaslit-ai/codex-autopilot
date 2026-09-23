@@ -4,7 +4,7 @@ Turn a task into a validated workflow, run its steps through Codex, and review t
 
 ## Install
 
-Requires **Node.js 24 or newer**, Git, and an authenticated [Codex CLI](https://learn.chatgpt.com/docs/codex-cli). Use macOS, Linux, or WSL.
+Requires **Node.js 24 or newer**, Git, and an authenticated [Codex CLI](https://learn.chatgpt.com/docs/codex-cli). Runs on macOS, Linux, and Windows (including WSL).
 
 ```sh
 npm install -g @openai/codex codex-autopilot

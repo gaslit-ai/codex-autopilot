@@ -117,7 +117,8 @@ try {
     await readFile(path.join(runDir, "manifest.json"), "utf8"),
   ) as RunManifest;
   assert.equal(manifest.status, "succeeded");
-  assert.equal(manifest.cwd, await realpath(target));
+  // GOTCHA: Windows short and long native paths can name the same directory.
+  assert.equal(await realpath(manifest.cwd), await realpath(target));
   assert.equal(manifest.execs.length, 4);
   const prompts = await Promise.all(
     manifest.execs.map((entry) =>
