@@ -32,8 +32,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --test tests/*.test.ts",
     "lint": "node --check src/viewer-ui/app.js && node --check src/viewer-ui/commands.js",
-    "format": "prettier --write src tests scripts package.json tsconfig*.json README.md AGENTS.md docs .agents/skills .github",
-    "format:check": "prettier --check src tests scripts package.json tsconfig*.json README.md AGENTS.md docs .agents/skills .github",
+    "format": "prettier --write src tests scripts package.json tsconfig*.json *.md docs .agents/skills .github",
+    "format:check": "prettier --check src tests scripts package.json tsconfig*.json *.md docs .agents/skills .github",
     "verify": "npm run typecheck && npm run lint && npm run test && npm run docs:check && npm run format:check && npm run test:package",
     "docs:check": "node scripts/check-docs.ts"
   },

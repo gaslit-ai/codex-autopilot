@@ -13,6 +13,9 @@ async function markdownFiles(dir: string): Promise<string[]> {
 const files = [
   "README.md",
   "AGENTS.md",
+  "CONTRIBUTING.md",
+  "SECURITY.md",
+  ...(await markdownFiles(".github")),
   ...(await markdownFiles("docs")),
   ...(await markdownFiles(".agents/skills")),
 ];

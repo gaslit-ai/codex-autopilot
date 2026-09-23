@@ -10,14 +10,14 @@ A workflow is a JSON plan with `version`, `id`, and 1–8 `steps`. The CLI start
     {
       "id": "inspect",
       "type": "agent.run",
-      "goal": "Use the researcher skill to inspect the viewer and identify concrete defects.",
+      "goal": "Inspect the viewer and identify concrete defects with file references and reproduction steps.",
       "necessaryContext": null,
       "dependsOn": []
     },
     {
       "id": "review",
       "type": "agent.run",
-      "goal": "Use the reviewer skill to verify and prioritize the findings.",
+      "goal": "Verify and prioritize the findings using the source code and relevant tests.",
       "necessaryContext": null,
       "dependsOn": ["inspect"]
     }

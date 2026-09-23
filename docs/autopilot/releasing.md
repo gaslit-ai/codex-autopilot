@@ -9,6 +9,7 @@ Use Node.js 24 LTS or newer and an npm account with package publishing rights.
 ```sh
 npm ci
 npm run verify
+node -e "require('node:fs').mkdirSync('.local', { recursive: true })"
 npm pack --pack-destination .local
 ```
 

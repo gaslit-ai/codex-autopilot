@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Use Node.js 24 LTS or newer, Git, and a current authenticated Codex CLI on `PATH`. Install with `npm install -g codex-autopilot`, or use `npx codex-autopilot`. Run commands from the Git repository you want the agents to inspect. Planning and review skills ship with the package; target repositories need no Autopilot skill files. See the [root quickstart](../../README.md).
+Use Node.js 24 LTS or newer, Git, and a current authenticated Codex CLI on `PATH`. Follow the [root quickstart](../../README.md) to install the current release. Run commands from the Git repository you want the agents to inspect. Planning and review skills ship with the package; target repositories need no Autopilot skill files.
 
 `CODEX_BIN` selects the executable. `CODEX_HOME` selects configuration, authentication, and supplemental transcripts. The runner and viewer both honor it; the viewer also accepts `--codex-home`.
 
